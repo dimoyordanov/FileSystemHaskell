@@ -9,7 +9,7 @@
 module Parser2 where
 
 import Data.Char (isSpace, isLetter, isNumber)
-import Control.Applicative (Alternative((<|>), empty, many, some))
+import Control.Applicative (liftA2, Alternative((<|>), empty, many, some))
 import Commands (CommandsTerminal(..))
 import Errors (Error(SomethingIsWrongParsingTheFile))
 import Data.Maybe (fromMaybe)
